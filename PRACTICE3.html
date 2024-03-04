@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <!-- selet line + alt + down/up arrow =>move the select line for up or down -->
+    <h2>This is HTML Form</h2>
+    <form action="backend.php">
+        <!--form is used for take input from user and store in action or in simple word this is used for making online form like stucture-->
+        <div> <!--div used for new line-->
+            name<input type="text" name="Myname" id="">
+        </div>
+        <br>
+
+        <div>
+            Roll<input type="text" name="Myroll" id="">
+        </div>
+        <br>
+
+        <label for="mail">email</label>
+        <!-- label is used for selet the word that have to write you in given box -->
+        <!--in for we written same value in id given in inpt tag-->
+        <!-- after for, we write the input statement word for that we have to writen -->
+        <div>
+            <input type="email" name="Myemail" id="mail"><!--here name is used for see this name in backend-->
+        </div>
+        <br>
+
+
+        <div>
+            DOB<input type="date" name="Mydate" id="">
+        </div>
+        <br>
+
+
+        <div>
+            phone number<input type="number" name="Mynumber" id="">
+        </div>
+        <br>
+
+
+        <div>
+            Are you eligible<input type="checkbox" name="Myeligibility" id="">
+        </div>
+        <br>
+
+
+        <div>
+            gender: Male<input type="radio" name="Mygender" id=""> Female<input type="radio" name="Mygender" id=""> other<input type="radio" name="" id="">
+        </div>
+        <br>
+
+
+        <div>
+            write about yourself<textarea name="Myinfo" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+
+
+        <label for="car">CAR</label>
+        <select name="mycar" id="car">
+            <option value="indica">indica</option>
+            <option value="swift" selected>swift</option>
+        </select>
+        <br>
+
+
+        <div>
+            <input type="submit" value="submit now">
+        </div>
+        <br>
+
+        
+        <div>
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+
+</html>
