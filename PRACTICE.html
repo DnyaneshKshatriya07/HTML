@@ -1,0 +1,249 @@
+<!DOCTYPE html> <!--DOCTYPE is used to understand the browser what type of file make therfore we use html-->
+<html lang="en"> <!--html lang is used for selet the language i.e. english(en)-->
+    <!--this is comment(shortcut=> select line+ctrl+/)-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML NOTES</title> <!--title is used for the file open with title name-->
+</head>
+<body>
+    <!--*********************************Heading paragraphs and emmet*********************************-->
+    <!--In html <meta name=> here 'meta' is TAG and 'name' is ATTRIBUTE-->
+    <h1>Dnyanesh</h1><!--h1 is used for write header name there are 6 types of header tags i.e. h1 to h6-->
+    <h2>Dnyanesh</h1>
+    <h3>Dnyanesh</h1>
+    <h4>Dnyanesh</h1>
+    <h5>Dnyanesh</h1>
+    <h6>Dnyanesh</h1><!--start and end is used becuase this is open and closing TAGs -->
+
+    <!--lorem + no. of dummy text you want to inset in paragraph-->
+    <p>Lorem ipsum dolor sit amet.</p><!--p stands for paragraph also used p*no. of paragraph you want to insert -->
+    <!--ctrl + enter =>used for jump to new line without usnig mouse-->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sed distinctio eum magnam obcaecati et suscipit ad dolore <strong>DNYANESH KSHATRIYA</strong> <!--strong name used for the bold the statements--> placeat doloremque beatae accusantium quod fuga, perferendis molestiae qui vel possimus laudantium! Quo quam, quidem <em>THIS IS ITALIC</em><!--strong name used for the italic--> veritatis molestiae quibusdam voluptatum aut deserunt natus nesciunt impedit illum deleniti, consequuntur saepe nostrum sint veniam reprehenderit.</p>
+
+    <p>first <br><!--br used for break the line(here only start is written because this is self closing tag )--> <hr><!--hr is used for draw the horizontal line(here only start is written because this is self closing tag) -->
+        line.
+    </p>
+    <hr>
+    <!--*************************************link and images******************************************-->
+    <a href="https://google.com"target="_blank">go to google</a> <br><!--create the link for give link-->
+    <a href="https://facebook.com"target="_blank"> go to facebook</a> <br><!--target is used to open the link in new tab-->
+    <a href="https://youtube.com"target="_blank"> go to youtube</a> <br> <!--this is used for external sites-->
+    <a href="https://instagram.com"target="_blank"> go to instagram</a> <br>
+
+    <a href="/PRCTICE.html"target="_blank">prctice of HTML</a> <br> <!--this is used for internal sites or files-->
+
+    <img src="dnyanesh.jpg" alt="error loding image">
+    <!--image is not present hence the alt text is shown-->
+
+    <img src="https://source.unsplash.com/random" alt="your internet is slow">
+    <!--image is present hence the image is shown-->
+    <hr>
+
+    <!--***************************************Tables and list****************************************-->
+    <ul> <!--ul is used for list in bullets-->
+        <!--ul type is attribute used for different types of bullets(types are=> disc,square,circle)-->
+        <li>This is first item of my unorderd list</li>
+        <ul type="square">
+            <li>This is first item of my unorderd neseted list</li>
+            <li>This is second item of my unorderd neseted list</li>
+            <li>This is third item of my unorderd neseted list</li>
+        </ul>
+
+        <li>This is first item of my unorderd list</li>
+        <li>This is first item of my unorderd list</li>
+    </ul>
+
+    <ol type="a"> <!--ul is used for list in Number-->
+        <!--ol type is attribute used for different types of numbering (types are=> 1,A,a,l,i)-->
+        <li>This is first item of my orderd list</li>
+        <li>This is first item of my orderd list</li>
+        <li>This is first item of my orderd list</li>
+    </ol>
+
+    <h3>HTML Table</h3>
+    <table> <!--table is used for making the table -->
+        <thead> <!--thead is used for write table heading in the table -->
+            <tr> <!--tr is used for write in row wise in the table -->
+                <th> name </th> <!--th is used in head in the table -->
+                <th> employee id </th>
+                <th> employee roll </th>
+            </tr>
+        </thead>
+        <tbody> <!--table is used for write the values/data in the table -->
+            <tr> <!--tr is used for write in row wise in the table -->
+                <td> dnyanesh </td> <!--td is used in body in the table -->
+                <td> abcd1 </td>
+                <td> programmer </td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td> rohan </td>
+                <td> abcd2 </td>
+                <td> data scintist </td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+
+    <!--****************************************Forms**********************************************-->
+    <!-- selet line + alt + down/up arrow =>move the select line for up or down -->
+    <h2>This is HTML Form</h2>
+    <form action="backend.php">
+        <!--form is used for take input from user and store in action or in simple word this is used for making online form like stucture-->
+        <div> <!--div used for new line-->
+            name<input type="text" name="Myname" id="">
+        </div>
+        <br>
+
+        <div>
+            Roll<input type="text" name="Myroll" id="">
+        </div>
+        <br>
+
+        <label for="mail">email</label>
+        <!-- label is used for selet the word that have to write you in given box -->
+        <!--in for we written same value in id given in inpt tag-->
+        <!-- after for, we write the input statement word for that we have to writen -->
+        <div>
+            <input type="email" name="Myemail" id="mail"><!--here name is used for see this name in backend-->
+        </div>
+        <br>
+
+
+        <div>
+            DOB<input type="date" name="Mydate" id="">
+        </div>
+        <br>
+
+
+        <div>
+            phone number<input type="number" name="Mynumber" id="">
+        </div>
+        <br>
+
+
+        <div>
+            Are you eligible<input type="checkbox" name="Myeligibility" id="">
+        </div>
+        <br>
+
+
+        <div>
+            gender: Male<input type="radio" name="Mygender" id=""> Female<input type="radio" name="Mygender" id=""> other<input type="radio" name="" id="">
+        </div>
+        <br>
+
+
+        <div>
+            write about yourself<textarea name="Myinfo" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+
+
+        <label for="car">CAR</label>
+        <select name="mycar" id="car">
+            <option value="indica">indica</option>
+            <option value="swift" selected>swift</option>
+        </select>
+        <br>
+
+
+        <div>
+            <input type="submit" value="submit now">
+        </div>
+        <br>
+
+        
+        <div>
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+    <hr>
+
+    <!--*******************************Inline and Block elements*************************************-->
+    <p>this is paragraph</p> <p>this is also paragraph</p>
+    <span>this is span</span> <span>this is also span</span>
+    <!--here in paragraph(block elements) we can't join two paragraphs at a time but if we used span(inline element) then we can join two paragraphs--> 
+    <!-- block elements is used whole space and inline elements is used only our space -->
+    <hr>
+
+    <!--************************************Ids and Classes******************************************-->
+    <h3>Ids and Classes</h3>
+    <div id= "mainbox" class= "redbg blackborder">
+        <!-- here id is the identifier this is unique for element we cannot make another element or any tag or anything with this name(i.e. mainbox)-->
+        <!-- here class is used for store the properties in one name and class is made in CSS(assume) and call here with the help of . or # operator and in class we write the number of names in class-->
+        <!-- Id is used for only one element and class is used for multiple elements -->
+        this is class
+        <!-- . is for class and # is for id -->
+        <span class="redbg"></span><!--write span.regbg and press enter to get this and this is calling of class with the help of '.' operator-->
+        <span id="mainbox"></span><!--write span#mainbox and oress enter to get this and this is calling of Id with the help of '#' operator-->
+        <div class="redbg blackborder anotherClass"></div><!--write div.redbg.blackborder.anotherclass and press enter to get this and this is calling of all the class in div-->
+        <!-- emmet takes div tag as defalt-->
+        <div class="blackbaground"></div> <!--write .blackbagroung makes the div of blackbaground-->
+        <!-- creating multiple elemets using Emmet -->
+        <span class="myclass1 myclass2 myclass3">first</span>
+        <span class="myclass1 myclass2 myclass3">second</span>
+        <span class="myclass1 myclass2 myclass3">third</span>
+        <span class="myclass1 myclass2 myclass3">fourth</span>
+        <!-- write span.myclass1.myclass2.myclass3*4 to make 4 span like this -->
+
+    </div>
+    <hr>
+
+    <!--**************************************HTML Entites********************************************-->
+    <div class="container">
+        <p>This is a                                                      paragraph</p>
+    </div>
+    <div class="container">
+        <p>This is a another &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; paragraph</p>
+        <p>paragraph is written like this <p> </p>
+        <!-- here '<p>' is not shown in result the how to written it in result -->
+        <p>paragraph is written like this &lt;p&gt; </p>
+        <!-- &lt; => '<' amd &gt; => '>' this is konwn as HTML entites-->
+        <p>&pound;</p> <!--&pound; used for write symbol of pound -->
+        <p>&copy;</p> <!--&copy; used for write symbol of copy; -->
+    </div>
+    <!-- &npsp used for one space (i.e.' ') -->
+    <!-- By default in HTML, chops of all the spaces and it consider it as one -->
+    <hr>
+
+    <!--***********************************HTML Semantic Tags*****************************************-->
+    <h3>Semantic Elements</h3>
+    <details>
+        <summary>I have keys but no doors. I have space but no room. You can enter but can’t leave. What am I?
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.</summary>
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        A keyboard.
+        lorem34
+    </details>
+    <!-- There are many examples of Semantics. You can take the reference of the internet to view all. Here are some of the important semantic elements-
+    <header>
+    <nav>
+    <section>
+    <article>
+    <footer>-->
+    <hr>
+
+    <!--***********************************E--N--D*****************************************-->
+</body>
+</html>  
