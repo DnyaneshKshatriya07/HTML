@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Tutorial</title>
+    <link rel="stylesheet" href="tp.css">
+    <!-- ^^ this is the external css means css used in separate css sheet and used in html sheet with the help of link tag. -->
+    <!-- here in href, put the name of css file name. -->
+    <style>
+        p{
+            color: white;
+            background: black; /* !important */
+             /* here important word used for this colour or any thing is final no change is happen.  */ */
+        }
+        #Dnyanu{
+            color: black;
+            background-color: orange;
+        }
+        /* here #dnyanu is the id of the specific paragraph and only that paragraoh colour has been changed. */
+        /* # is used for id  */
+        /* id selector is used when we used it for only one statement. */
+        .Kshatriya{
+            background-color: rgb(72, 15, 216);
+        }
+        /* '.'is used for class  */
+        /* class selector is used when we used it for multiple lines or statements. */
+          /* this is used for comment in CSS. */
+
+        spam ,footer{
+            background-color: green;
+        }
+        /* here grouping selector is used means design the group of statement in single statement.  */
+
+        p{
+            border: 2px solid red;
+        }
+        /* here border is used to make border to the given statement or any other thing.  */
+    </style>
+    <!-- ^^ this is the internal css means css used in html sheet. -->
+    <!-- here p stands for paragraph -->
+
+    <!-- HERE 1ST PRIORITY IS GIVEN TO INLINE AND THEN OTHER TWO. IN INTERNAL OR EXTERNAL PRIORITY IS DEPEND ON WRITE CODE MEANS WE WRITE INTERNAL CSS THEN INTERNAL CSS HAS MORE PRIORITY THEN EXTERNAL AND VICEVERSA. -->
+</head>
+<body>
+    <h3>This is Html/Css tutorial.</h3>
+    <!-- <p style="color: white; background-color: blue;">THis video is made by Dnyanesh. He is the best programmer and Youtuber.</p> -->
+    <!-- ^^ this is the inline css means css used in html tag in html sheet. -->
+    
+    <p>This video is made by Dnyanesh. He is the best programmer and Youtuber.</p>
+    <p id="Dnyanu">This video is made by jnsjs. He is the best programmer and instagramer.</p>
+    <!-- here id is the id of that paragraph. with the help of id we can change the colour or any other thing of only this paragraph. -->
+    <p class="Kshatriya">This video is made by zkskfv. He is the best programmer and bloger.</p>
+
+    <div>
+        <spam>
+            Lorem ipsum dolor sit amet.
+        </spam>
+    </div>
+
+    <footer>This is footer.</footer>
+</body>
+</html>
